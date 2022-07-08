@@ -1,11 +1,11 @@
 * , *::before,*::after {
     box-sizing: border-box;
+    margin: 0;
 }
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 10px;
     background-color: rgba(0,0,0,0.9);
     color: aliceblue;
     font-family: 'Vazirmatn', sans-serif;
@@ -15,7 +15,6 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 250px;
     margin-bottom: 80px;
 }
 
@@ -65,8 +64,45 @@ a {
     height: 650px;
 }
 .img-cnt {
-    border: 2px solid white;
+    border: 1px solid white;
   border-radius: 15px;
   height: 30.333333%;
   overflow: hidden;
+}
+#cnt-s {
+    height: 650px
+}
+
+@media screen and (max-width: 331px) {
+   section {
+       display: flex;
+       flex-direction: column;
+       height: 190px;
+   }
+   section div {
+       width: 100%;
+       text-align: center;
+   }
+   main {
+       display: flex;
+       flex-direction: column;
+   }
+   #cnt-s {
+       height: 450px;
+       width: 85%;
+       margin-bottom: 25px;
+   }
+   #cnt-s2 {
+    width: 85%;
+   }
+   #cnt-s2 div {
+       height: 1150px;
+   }
+   .img-cnt {
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
 }
